@@ -51,7 +51,7 @@ Console.WriteLine(max);
 // 4 -> да
 // -3 -> нет
 // 7 -> нет
-
+/*
 Console.WriteLine("Input a number: ");
 int a = Convert.ToInt32(Console.ReadLine());
 
@@ -59,3 +59,34 @@ if (a % 2 == 0)
     Console.WriteLine("Yes");
 else
     Console.WriteLine("No");
+
+*/
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+// 5 -> 2, 4
+// 8 -> 2, 4, 6, 8
+// Ребята, числа под задачами представлены исключительно для проверки! Тестируйте задачи и на собственных примерах тоже :)
+/*
+Console.WriteLine("Input a number (N): ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+while (current <= N)
+{
+    Console.Write(current + " ");
+    current+=2;
+}
+*/
+
+// Задача 8: Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.
+/*
+Console.WriteLine("Input a number (N): ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+int current = 1;
+
+while (current <= N)
+{
+    if (current % 2 == 0)
+    Console.Write(current + " ");
+    current++;
+}
+*/
