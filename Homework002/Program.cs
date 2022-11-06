@@ -26,10 +26,27 @@ else
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
-//int ThirdDigit(int number)
+/*
+int ThirdDigitOfNum (int number)
+{
+    int count = 0;
+    while (number >= 1000)
+    {
+        number = number / 10;
+        count++;
+    }
+        if(number < 100)
+        {
+            Console.WriteLine("Третьей цифры нет");
+        }  
+    return number % 10;
+}
 
-
-
+Console.WriteLine("Input a number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+int result = ThirdDigitOfNum(number);
+Console.WriteLine(result);
+*/
 
 
 
@@ -37,3 +54,20 @@ else
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+/*
+bool DigitDayOff (int num)
+{
+    if(num == 6 || num == 7)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+Console.WriteLine("Input a number day of the week: ");
+int number = Convert.ToInt32(Console.ReadLine());
+bool result = DigitDayOff(number);
+Console.WriteLine($"Number {number} of the week is {result}");
+*/
