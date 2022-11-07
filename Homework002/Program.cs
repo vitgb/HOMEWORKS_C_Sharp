@@ -26,27 +26,30 @@ else
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
-/*
+
 int ThirdDigitOfNum (int number)
 {
-    int count = 0;
-    while (number >= 1000)
+    if(number < 100)
     {
-        number = number / 10;
-        count++;
+        Console.WriteLine("Третьей цифры нет");
     }
-        if(number < 100)
+    else
+    {
+        int count = 0;
+        while (number >= 1000)
         {
-            Console.WriteLine("Третьей цифры нет");
-        }  
-    return number % 10;
+            number = number / 10;
+            count++;
+        }
+    }
+return number % 10;
 }
 
 Console.WriteLine("Input a number: ");
-int number = Convert.ToInt32(Console.ReadLine());
-int result = ThirdDigitOfNum(number);
+int num = Convert.ToInt32(Console.ReadLine());
+int result = ThirdDigitOfNum(num);
 Console.WriteLine(result);
-*/
+
 
 
 
